@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.karanja.sufeed.controllers.RegistrationController">
+    <children>
+        <VBox spacing="15" alignment="CENTER" prefWidth="400" prefHeight="400" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" styleClass="registration-container">
+            <Label text="Register" styleClass="title-label" />
+            <TextField fx:id="usernameField" promptText="Enter your username" styleClass="input-field" />
+            <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="input-field" />
+            <Button text="Register" onAction="#register" styleClass="register-button" />
+            <Hyperlink text="Already have an account? Login" onAction="#navigateToLogin" />
+        </VBox>
+    </children>
+</AnchorPane>

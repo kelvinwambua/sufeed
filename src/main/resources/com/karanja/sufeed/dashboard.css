@@ -1,0 +1,117 @@
+/* Root styling */
+.root {
+    -fx-font-family: 'Segoe UI', sans-serif;
+    -fx-font-size: 14px;
+    -fx-background-color: #f4f6f8;
+}
+
+/* Top Bar */
+.top-bar {
+    -fx-background-color: #007bff;
+    -fx-padding: 15px;
+}
+
+.app-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
+
+/* Sidebar */
+.sidebar {
+    -fx-background-color: #343a40;
+    -fx-padding: 20px;
+    -fx-spacing: 15px;
+}
+
+.sidebar-button {
+    -fx-background-color: #495057;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.sidebar-button:hover {
+    -fx-background-color: #6c757d;
+}
+
+.sidebar-button:pressed {
+    -fx-background-color: #343a40;
+}
+
+/* Main Content */
+.main-content {
+    -fx-padding: 20px;
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dee2e6;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+/* Content Section */
+.content-section {
+    -fx-padding: 15px;
+    -fx-background-color: #f8f9fa;
+    -fx-border-color: #dee2e6;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.section-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #495057;
+}
+
+/* Text Fields */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #495057;
+}
+
+.text-field:focused {
+    -fx-border-color: #007bff;
+    -fx-border-width: 2px;
+}
+
+/* Buttons */
+.action-button {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.action-button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.action-button:pressed {
+    -fx-background-color: #004085;
+}
+
+/* List Views */
+.list-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 14px;
+    -fx-text-fill: #495057;
+}
+
+.list-view .cell:selected {
+    -fx-background-color: #007bff;
+    -fx-text-fill: #ffffff;
+}

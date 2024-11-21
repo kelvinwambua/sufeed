@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Pos?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.karanja.sufeed.controllers.LoginController">
+    <children>
+        <VBox spacing="15" alignment="CENTER" prefWidth="400" prefHeight="400" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" styleClass="login-container">
+            <Label text="Login" styleClass="title-label" />
+            <TextField fx:id="usernameField" promptText="Enter your username" styleClass="input-field" />
+            <PasswordField fx:id="passwordField" promptText="Enter your password" styleClass="input-field" />
+            <Button text="Login" onAction="#login" styleClass="login-button" />
+            <Hyperlink text="Don't have an account? Sign Up" onAction="#navigateToSignUp" />
+        </VBox>
+    </children>
+</AnchorPane>

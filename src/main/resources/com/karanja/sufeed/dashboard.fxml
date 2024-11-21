@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.karanja.sufeed.controllers.DashboardController">
+    <children>
+        <VBox spacing="20" alignment="CENTER" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" AnchorPane.rightAnchor="10" AnchorPane.bottomAnchor="10">
+            <Label text="Dashboard" styleClass="header-label"/>
+
+            <SplitPane orientation="HORIZONTAL">
+                <!-- Left Pane: Classes -->
+                <VBox spacing="15" alignment="CENTER" styleClass="pane-section">
+                    <Label text="Classes" styleClass="section-label"/>
+                    <HBox spacing="5">
+                        <TextField fx:id="classNameField" promptText="Enter Class Name">
+                            <tooltip>
+                                <Tooltip text="Enter the name of a new class"/>
+                            </tooltip>
+                        </TextField>
+                        <Button text="Add" onAction="#addClass">
+                            <graphic>
+                                <ImageView fitHeight="16" fitWidth="16">
+                                    <image>
+                                        <Image url="@assets/add-icon.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </HBox>
+                    <ListView fx:id="classListView" onMouseClicked="#handleClassSelection" styleClass="list-view"/>
+                </VBox>
+
+                <!-- Middle Pane: Topics -->
+                <VBox spacing="15" alignment="CENTER" styleClass="pane-section">
+                    <Label text="Topics" styleClass="section-label"/>
+                    <HBox spacing="5">
+                        <TextField fx:id="topicNameField" promptText="Enter Topic Name">
+                            <tooltip>
+                                <Tooltip text="Enter the topic related to the selected class"/>
+                            </tooltip>
+                        </TextField>
+                        <Button text="Add" onAction="#addTopic">
+                            <graphic>
+                                <ImageView fitHeight="16" fitWidth="16">
+                                    <image>
+                                        <Image url="@assets/add-icon.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </HBox>
+                    <ListView fx:id="topicListView" onMouseClicked="#handleTopicSelection" styleClass="list-view"/>
+                </VBox>
+
+                <!-- Right Pane: Feedback -->
+                <VBox spacing="15" alignment="CENTER" styleClass="pane-section">
+                    <Label text="Feedback" styleClass="section-label"/>
+                    <HBox spacing="5">
+                        <TextField fx:id="feedbackField" promptText="Enter Feedback">
+                            <tooltip>
+                                <Tooltip text="Enter feedback for the selected topic"/>
+                            </tooltip>
+                        </TextField>
+                        <Button text="Add" onAction="#addFeedback">
+                            <graphic>
+                                <ImageView fitHeight="16" fitWidth="16">
+                                    <image>
+                                        <Image url="@assets/add-icon.png"/>
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                    </HBox>
+                    <ListView fx:id="feedbackListView" styleClass="list-view"/>
+                </VBox>
+            </SplitPane>
+        </VBox>
+    </children>
+</AnchorPane>
